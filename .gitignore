@@ -5,5 +5,4 @@
 /media
 
 package-lock.json
-.env
 .nyc_output

@@ -2,7 +2,6 @@ import { Strategy as JwtStrategy, ExtractJwt } from 'passport-jwt';
 import passport from 'passport';
 import dotenv from 'dotenv';
 import fs from 'fs';
-import path from 'path';
 
 dotenv.config();
 

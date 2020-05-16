@@ -1,0 +1,15 @@
+{
+  "window.zoomLevel": 2,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "eslint.enable": true,
+  "eslint.options": {
+    "configFile": "/Users/baker/Documents/HB/backend/.eslintrc.json"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+}

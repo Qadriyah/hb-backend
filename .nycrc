@@ -1,0 +1,16 @@
+{
+  "all": true,
+  "exclude": [
+    "**/*.spec.js",
+    "**/*.test.js",
+    "**/test/**",
+    "**/build/**",
+    "config/",
+    "**/coverage/**",
+    "webpack.config.js",
+    ".prettierrc.js",
+    "**/bin/**",
+    "**/data/**",
+    "**/media/**"
+  ]
+}

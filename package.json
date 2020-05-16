@@ -1,0 +1,48 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js --mode=development -w",
+    "start": "nodemon ./build/index.js",
+    "dev": "concurrently \"npm run build\" \"npm start\"",
+    "test": "export NODE_ENV=test && nyc --all --reporter=html --reporter=text mocha --require @babel/register --timeout 10000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "concurrently": "^5.2.0",
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fast-json-patch": "^3.0.0-1",
+    "jimp": "^0.10.3",
+    "jsonwebtoken": "^8.5.1",
+    "mocha": "^7.1.2",
+    "nodemon": "^2.0.3",
+    "nyc": "^15.0.1",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "supertest": "^4.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/register": "^7.9.0",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-add-module-exports": "^1.0.2",
+    "eslint": "^7.0.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "prettier": "^2.0.5",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-node-externals": "^1.7.2"
+  }
+}

@@ -7,7 +7,8 @@
     "build": "webpack --config webpack.config.js --mode=development -w",
     "start": "nodemon ./build/index.js",
     "dev": "concurrently \"npm run build\" \"npm start\"",
-    "test": "export NODE_ENV=test && nyc --all --reporter=html --reporter=text mocha --require @babel/register --timeout 10000"
+    "test": "export NODE_ENV=test && nyc --all --reporter=html --reporter=text mocha --require @babel/register --timeout 10000",
+    "lint": "eslint -c .eslintrc.json"
   },
   "keywords": [],
   "author": "",
@@ -40,6 +41,11 @@
     "eslint": "^7.0.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-config-prettier": "^6.11.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
     "prettier": "^2.0.5",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",

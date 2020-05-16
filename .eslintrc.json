@@ -3,7 +3,7 @@
     "es6": true,
     "node": true
   },
-  "extends": ["eslint:recommended", "airbnb", "prettier"],
+  "extends": ["eslint:recommended", "airbnb", "prettier", "standard"],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"

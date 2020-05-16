@@ -35,6 +35,26 @@ Run the following to run the test suite
 npm test
 ```
 
+## Running with docker
+
+### Docker image repository
+
+```
+https://hub.docker.com/repository/docker/qadriyah/backendimage
+```
+
+### Docker commands
+
+Run the following commands to get the server run in a docker container
+
+```
+docker pull qadriyah/backendimage:latest
+
+docker run -p 5000:5000 -d qadriyah/backendimage
+
+The server will be available on http://localhost:5000
+```
+
 ## List of endpoint
 
 | Method | Route                  | Description                           |
@@ -46,8 +66,8 @@ npm test
 ## Built With
 
 - Node - JavaScript runtime environment that executes JavaScript code outside of a web browser.
-- Express - A web application ramework for node
-- Mocha/Chai/Supertest - Test environment rameworks
+- Express - A web application framework for node
+- Mocha/Chai/Supertest - Test environment frameworks
 - nyc - used to generate test reports
 
 ## Usage
@@ -69,6 +89,7 @@ Sample data format:
 
 ### Json patch endpoint
 
+```
 http:localhost:5000/api/private/patch
 
 Sample data format:
@@ -82,13 +103,16 @@ Sample data format:
     {"op": "add", "path": "/name", "value": "Baker Sekitoleko"}
   ]
 }
+```
 
 ### Thumbnail generation endpoint
 
+```
 http:localhost:5000/api/private/thumbnail
 http:localhost:5000/api/private/thumbnail?imageSrc="public_image_url"
 
 Takes an optional query parameter `imageSrc` that holds a public image URL
+```
 
 ## Author
 
